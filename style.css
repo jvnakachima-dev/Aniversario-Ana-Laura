@@ -1,0 +1,120 @@
+:root {
+    --azul-forte: #0057b8;
+    --azul-claro: #bfe8ff;
+    --branco: #fffaf2;
+    --pink: #e91e63;
+    --amarelo: #ffd166;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--azul-claro);
+    color: var(--azul-forte);
+}
+
+section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+section > * {
+    max-width: 520px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background:
+        linear-gradient(rgba(255, 250, 242, 0.85), rgba(255, 250, 242, 0.85)),
+        var(--azul-claro);
+    border: 14px solid white;
+}
+
+.hero-conteudo {
+    max-width: 520px;
+    text-align: center;
+}
+
+.convite-label {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: var(--pink);
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    color: var(--azul-forte);
+}
+
+.idade {
+    font-size: 28px;
+    margin-top: 8px;
+}
+
+.frase {
+    color: var(--pink);
+    font-weight: bold;
+    margin-top: 12px;
+}
+.detalhes {
+    background-color: var(--azul-claro);
+}
+
+.detalhes h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: var(--azul-forte);
+}
+
+.detalhes p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 8px;
+}
+
+.acoes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.botao,
+.botao:visited {
+    display: block;
+    text-decoration: none;
+    background-color: var(--azul-forte);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid var(--azul-forte);
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: var(--pink);
+    border-color: var(--pink);
+}
+
+.botao:active {
+    transform: scale(0.98);
+}
+
+.botao:focus-visible {
+    outline: 3px solid var(--amarelo);
+    outline-offset: 3px;
+}
