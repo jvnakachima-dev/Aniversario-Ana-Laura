@@ -48,7 +48,7 @@ section > * {
     top: 0;
     bottom: 0;
     width: 50%;
-    background-image: url("./assets/porta-fechada.png");
+    background-image: url("./assets/porta-fechada.jpg");
     background-size: 200% 100%;
     background-repeat: no-repeat;
     transition: transform 1.2s ease-in-out;
