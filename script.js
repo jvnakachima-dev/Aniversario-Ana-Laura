@@ -1,3 +1,11 @@
+if ("scrollRestoration" in history) {
+    history.scrollRestoration = "manual";
+}
+
+window.addEventListener("load", () => {
+    window.scrollTo(0, 0);
+});
+
 const dataFesta = new Date("2026-08-08T21:00:00").getTime();
 
 const diasElemento = document.getElementById("dias");
@@ -35,6 +43,8 @@ const abertura = document.getElementById("abertura");
 const abrirConvite = document.getElementById("abrirConvite");
 
 abrirConvite.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+
     abertura.classList.add("aberto");
 
     setTimeout(() => {
