@@ -55,3 +55,25 @@ abrirConvite.addEventListener("click", () => {
         abertura.classList.add("removida");
     }, 1600);
 });
+
+const musicaConvite = document.getElementById("musicaConvite");
+
+musicaConvite.volume = 0.18;
+
+abrirConvite.addEventListener("click", () => {
+    window.scrollTo(0, 0);
+
+    musicaConvite.play().catch(() => {
+        console.log("O navegador bloqueou a reprodução automática da música.");
+    });
+
+    abertura.classList.add("aberto");
+
+    setTimeout(() => {
+        abertura.classList.add("escondida");
+    }, 900);
+
+    setTimeout(() => {
+        abertura.classList.add("removida");
+    }, 1600);
+});
